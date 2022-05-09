@@ -34,10 +34,9 @@ I created this extension to use GitHub Issues as my diary by using [r7kamura/gia
 To eaily open today's issue from anywhere, I'm using `gh d` alias like this:
 
 ```console
-$ gh alias set d "diary --repo foo/bar"
-- Adding alias for d: diary --repo foo/bar
+$ gh alias set d "diary --repo r7kamura/diary"
+- Adding alias for d: diary --repo r7kamura/diary
 ✓ Added alias.
-/home/r7kamura/ghq/github.com/r7kamura/gh-diary main
 $ gh d
-Opening github.com/foo/bar/issues/1 in your browser.
+Opening github.com/r7kamura/diary/issues/1 in your browser.
 ```
