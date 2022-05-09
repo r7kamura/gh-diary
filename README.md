@@ -25,7 +25,7 @@ If you are working on foo/bar repo directory, you can omit `--repo foo/bar` opti
 gh diary
 ```
 
-### Background
+## Background
 
 I created this extension to use GitHub Issues as my diary by using [r7kamura/gialog](https://github.com/r7kamura/gialog).
 
