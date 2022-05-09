@@ -24,3 +24,20 @@ If you are working on foo/bar repo directory, you can omit `--repo foo/bar` opti
 ```bash
 gh diary
 ```
+
+### Background
+
+I created this extension to use GitHub Issues as my diary by using [r7kamura/gialog](https://github.com/r7kamura/gialog).
+
+- https://r7kamura.github.io/diary/
+
+To eaily open today's issue from anywhere, I'm using `gh d` alias like this:
+
+```console
+$ gh alias set d "diary --repo foo/bar"
+- Adding alias for d: diary --repo foo/bar
+✓ Added alias.
+/home/r7kamura/ghq/github.com/r7kamura/gh-diary main
+$ gh d
+Opening github.com/foo/bar/issues/1 in your browser.
+```
