@@ -3,11 +3,11 @@ set -e
 
 title=$(date +%Y-%m-%d)
 
-number=$(gh issue list --search "${title} in:title" --json number --jq "first.number")
+number=$(gh issue list --search "${title} in:title" --json number --jq "first.number" $@)
 
 if [ -z "${number}" ]
 then
-  number=$(gh issue create --title "${title}" --body "" | sed --null-data --regexp-extended --expression "s;.*issues/([0-9]+);\1;")
+  number=$(gh issue create --title "${title}" --body "" $@ | sed --null-data --regexp-extended --expression "s;.*issues/([0-9]+);\1;")
 fi
 
-gh issue view "${number}" --web
+gh issue view "${number}" --web $@
