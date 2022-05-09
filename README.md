@@ -14,7 +14,7 @@ gh extension install r7kamura/gh-diary
 gh diary
 ```
 
-Suppose today is May 9, 2022, this command would work as follows:
+Suppose today is May 9 2022, this command works as follows:
 
 1. Create an issue titled "2022-05-09" if it doesn't exists
 2. Open the issue in your web browser
