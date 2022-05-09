@@ -1,6 +1,6 @@
 # gh-diary
 
-[GitHub CLI](https://github.com/cli/cli) extension to open issue titled YYYY-MM-DD.
+[GitHub CLI](https://github.com/cli/cli) extension to open today's issue.
 
 ## Install
 
