@@ -20,6 +20,6 @@ editor)
 web)
   shift
   number=$(get_issue_number $@)
-  gh issue comment "${number}" --web $@
+  gh issue view "${number}" --web $@
   ;;
 esac
