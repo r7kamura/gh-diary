@@ -12,7 +12,7 @@ gh extension install r7kamura/gh-diary
 
 ```bash
 # Open the text editor to write comment to today's issue.
-gh diary comment --repo foo/bar
+gh diary editor --repo foo/bar
 
 # Open today's issue in the web browser.
 gh diary web --repo foo/bar
@@ -26,7 +26,7 @@ Suppose today is May 9 2022, this command works as follows:
 If you are working on foo/bar repo directory, you can omit `--repo foo/bar` option:
 
 ```bash
-gh diary comment
+gh diary editor
 ```
 
 ## Background
