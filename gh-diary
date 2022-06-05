@@ -3,7 +3,7 @@ set -e
 
 get_issue_number() {
   local title=$(date +%Y-%m-%d)
-  local number=$(gh issue list --search "${title} in:title" --json number --jq "first.number" $@)
+  local number=$(gh issue list --search "\"${title}\" in:title" --json number --jq "first.number" $@)
   if [ -z "${number}" ]
   then
     number=$(gh issue create --title "${title}" --body "" $@ | sed --null-data --regexp-extended --expression "s;.*issues/([0-9]+);\1;")
